@@ -1,0 +1,527 @@
+.app-layoutWrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    /*
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-blue-09) var(--primary-bg-10);
+    */
+}
+/*
+.app-layoutWrapper::-webkit-scrollbar {
+    width: 2.5px;
+}
+.app-layoutWrapper::-webkit-scrollbar-track {
+    width: 2.5px;
+    border-radius: 2.5px;
+    background-color: var(--primary-bg-10);
+}
+.app-layoutWrapper::-webkit-scrollbar-thumb {
+    border-radius:  2.5px;
+    background-color: var(--primary-blue-09);
+}
+*/
+
+.app-largeViewWindowWrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    /*background-color: rgba(255, 255, 255, 0.95);*/
+}
+.app-largeViewPageWrapper {
+    display: flex;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.app-smallViewFixedWindowWrapper {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(125, 125, 125, 0.35);
+}
+.app-largeViewFixedWindowWrapper {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.app-smallViewFixedWindowShortsWrapper {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    min-height: 100vh;
+
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.app-largeViewFixedInnerWindowWrapper {
+    position: relative;
+
+    display: flex;
+
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.app-largeViewLoginWindow {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+
+    height: 450px;
+    min-height: 450px;
+    max-height: 450px;
+
+    border-radius: 15px;
+    background-color: var(--secondary-bg-03);
+    box-shadow: 0px 0px 3px var(--primary-bg-05);
+
+    animation-name: overlay-load;
+    animation-duration: 0.35s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+
+    left: calc(50vw - 250px);
+    bottom: calc(50vh - 225px);
+}
+.app-smallViewLogoutWindow {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
+    width: calc(100% - 20px);
+    max-width: 500px;
+
+    min-height: 372px;
+    max-height: 1000px;
+
+    border-radius: 7.5px;
+    background-color: var(--secondary-bg-03);
+    box-shadow: 0px 0px 3px var(--primary-bg-05);
+
+    overflow: hidden;
+}
+.app-largeViewLogoutWindow {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 197.5px - 55px);
+
+    width: 85%;
+    max-width: 500px;
+
+    min-height: 372px;
+    max-height: 1000px;
+
+    border-radius: 7.5px;
+    background-color: var(--secondary-bg-03);
+    box-shadow: 0px 0px 3px var(--primary-bg-05);
+
+    overflow: hidden;
+}
+.app-largeViewLogoutWindowV2 {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 91.5px - 55px);
+
+    width: 85%;
+    max-width: 500px;
+
+    height: 183px;
+    min-height: 183px;
+    max-height: 183px;
+
+    border-radius: 7.5px;
+    background-color: var(--secondary-bg-03);
+    box-shadow: 0px 0px 3px var(--primary-bg-05);
+
+    overflow: hidden;
+}
+.app-largeViewFixedInnerWindowSideFixers {
+    width: 330px;
+    min-width: 330px;
+    max-width: 330px;
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.app-largeViewFixedInnerWindowMainFixer {
+    position: relative;
+    align-items: center;
+    flex: auto;
+    
+    margin-left: 3px;
+    margin-right: 7.5%;
+
+    width: calc(92.5% - 664px);
+    min-width: calc(92.5% - 664px);
+    max-width: calc(92.5% - 664px);
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.app-largeViewPostWindow {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 197.5px - 55px);
+
+    width: 85%;
+    max-width: 700px;
+
+    min-height: 372px;
+    max-height: 1000px;
+
+    border-radius: 7.5px;
+    background-color: var(--secondary-bg-03);
+    box-shadow: 0px 0px 3px var(--primary-bg-05);
+
+    overflow: hidden;
+}
+@keyframes post-overlay-load {
+    0% {
+        margin-top: calc(100vh + 2px);
+    }
+    100% {
+        margin-top: calc(50vh - 197.5px - 55px);
+    }
+}
+@keyframes overlay-load {
+    0% {
+        left: calc(50vw - 250px);
+        bottom: -450px;
+    }
+    100% {
+        left: calc(50vw - 250px);
+        bottom: calc(50vh - 225px);
+    }
+}
+
+
+.app-largeViewMediaSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.app-largeViewMediaSideToggleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: rgba(225, 225, 225, 0.25);
+}
+.app-largeViewMediaSideToggleBtn:hover {
+    background-color: var(--primary-bg-01);
+   /*background-color: rgba(225, 225, 225, 0.35);*/
+}
+.app-largeViewMediaSideToggleBtnIcon {
+    transform: scale(1.25);
+    color: var(--primary-bg-03);
+}
+.app-largeViewMediaSideToggleBtn:hover .app-largeViewMediaSideToggleBtnIcon {
+    color: var(--primary-bg-10);
+}
+.app-largeMediaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100% - 120px);
+    min-width: calc(100% - 120px);
+    max-width: calc(100% - 120px);
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.app-largeMediaImg {
+    max-width: calc(100% - 60px);
+    max-height: calc(100% - 110px);
+
+    object-fit: contain;
+}
+
+
+.app-largeViewShortWindow {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 85%;
+    max-width: 700px;
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.app-largeViewPrimaryFocusContainer {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 450px);
+    min-width: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+    transition: all 0.15s linear;
+}
+.app-largeViewPrimaryFocusInnerContainer {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+    transition: all 0.15s linear;
+}
+.app-largeViewSecondaryFocusContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 450px;
+    min-width: 450px;
+    max-width: 450px;
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+    background-color: var(--secondary-bg-03);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    transition: all 0.15s linear;
+}
+.app-largeViewSecondaryFocusContainer::-webkit-scrollbar {
+    display: none;
+
+    width: 0;
+    background: transparent; 
+}
+.app-largeViewMediaSideToggleonFocusBtn {
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: rgba(225, 225, 225, 0.25);
+}
+.app-largeViewMediaSideToggleonFocusBtn:hover {
+    background-color: var(--primary-bg-01);
+}
+.app-largeViewMediaSideToggleonFocusBtn:hover .app-largeViewMediaSideToggleBtnIcon {
+    color: var(--primary-bg-10);
+}
+.app-largeViewMediaSideToggleLikeBtnIcon {
+    transform: scale(1.25);
+    color: var(--primary-bg-03);
+
+    stroke: var(--primary-bg-03);
+    stroke-width: 1px;
+}
+.app-largeViewMediaSideToggleDislikeBtnIcon {
+    transform: scale(-1.25, 1.25);
+    color: var(--primary-bg-03);
+
+    stroke: var(--primary-bg-03);
+    stroke-width: 1px;
+}
+.app-largeViewMediaSideToggleBtn:hover .app-largeViewMediaSideToggleLikeBtnIcon {
+    color: var(--primary-bg-10);
+    stroke: var(--primary-bg-10);
+}
+.app-largeViewMediaSideToggleBtn:hover .app-largeViewMediaSideToggleDislikeBtnIcon {
+    color: var(--primary-bg-10);
+    stroke: var(--primary-bg-10);
+}
+.app-largeViewPrimaryFocusNavigationContainer {
+    position: absolute;
+    top: calc(50% - 25px - ((80px + 25px) / 2));
+    right: 15.5px;
+
+    display: flex;
+    flex-direction: column;
+}
+.app-largeViewSecondaryFocusHeader {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+
+    width: 450px;
+    min-width: 450px;
+    max-width: 450px;
+
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+
+    transition: all 0.15s linear;
+
+    background-color: var(--secondary-bg-03);
+    border-bottom: solid 1px var(--primary-bg-08);
+}
+.app-largeViewSecondaryFocusHeaderTxt {
+    margin-left: 16px;
+
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--primary-bg-01);
+}
+.app-largeViewSecondaryFocusHeaderMargin {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: 51px;
+    min-height: 51px;
+    max-height: 51px;
+}
+.app-largeViewSecondaryFocusBody {
+    display: flex;
+    flex-direction: column;
+
+    width: 450px;
+    min-width: 450px;
+    max-width: 450px;
+}

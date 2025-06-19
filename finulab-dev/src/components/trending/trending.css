@@ -1,0 +1,182 @@
+.finulab-trendingWrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+
+    width: calc(100% - 32px);
+    min-width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
+
+    height: calc(100% - 32px);
+    min-height: calc(100% - 32px);
+    max-height: calc(100% - 32px);
+
+    overflow: hidden;
+}
+.finulab-trendingHeader {
+    display: flex;
+    align-items: center;
+}
+.finulab-trendingHeaderNo {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    
+    font-size: 1rem;
+    color: var(--primary-bg-05);
+}
+.finulab-trendingHeaderNoLoading {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+
+    height: 19px;
+    min-height: 19px;
+    max-height: 19px;
+
+    border-radius: 3px;
+    background-color: var(--primary-bg-08);
+
+    animation-name: glisten-profile-animation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.finulab-trendingHeaderDesc {
+    display: block;
+
+    margin-left: 10px;
+
+    width: calc(100% - 20px - 10px);
+    min-width: calc(100% - 20px - 10px);
+    max-width: calc(100% - 20px - 10px);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--primary-bg-01);
+}
+.finulab-trendingHeaderDescLoading {
+    margin-left: 10px;
+
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+
+    height: 21px;
+    min-height: 21px;
+    max-height: 21px;
+    
+    background-color: var(--primary-bg-08);
+
+    animation-name: glisten-profile-animation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.finulab-trendingSecondaryDesc {
+    display: block;
+
+    margin-left: 30px;
+
+    width: calc(100% - 20px - 10px);
+    min-width: calc(100% - 20px - 10px);
+    max-width: calc(100% - 20px - 10px);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--primary-bg-05);
+}
+.finulab-trendingSecondaryDescLoading {
+    margin-top: 3px;
+    margin-left: 30px;
+
+    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
+
+    height: 13px;
+    min-height: 13px;
+    max-height: 13px;
+    
+    background-color: var(--primary-bg-08);
+
+    animation-name: glisten-profile-animation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.finulab-trendingDescBody {
+    display: flex;
+
+    margin-top: 16px;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    max-height: calc((3 * 1rem) + 15px);
+
+    overflow: hidden;
+    font-size: 0.95rem;
+    color: var(--primary-bg-01);
+}
+.finulab-trendingDescInnerBodyLoading {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: 21.58px;
+    min-height: 21.58px;
+    max-height: 21.58px;
+    
+    background-color: var(--primary-bg-08);
+
+    animation-name: glisten-profile-animation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.finulab-trendingDescInnerBody {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    text-align: left;
+    text-overflow: ellipsis;
+}
+.finulab-trendingDescInnerBody a {
+    text-decoration: none;
+}
+.finulab-trendingDescInnerBody p:first-of-type {
+    padding-top: 0;
+    margin-top: 0;
+}
+.finulab-trendingDescInnerBody p:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.finulab-trendingDescInnerBodyTxt {
+    line-height: 1.42;
+    outline: none;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    cursor: pointer;
+}

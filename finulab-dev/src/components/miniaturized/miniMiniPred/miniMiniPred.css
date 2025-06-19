@@ -1,0 +1,252 @@
+.miniminiPred-yesonoTradeOutcomesOptionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: auto;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+}
+.miniminiPred-yesTradeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--primary-green-09);
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+    background-color: #2ecc7126;
+}
+.miniminiPred-yesTradeBtn:hover {
+    color: var(--primary-bg-10);
+    background-color: var(--primary-green-09);
+}
+.miniminiPred-noTradeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--primary-red-09);
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+    background-color: #df534426;
+}
+.miniminiPred-noTradeBtn:hover {
+    color: var(--primary-bg-10);
+    background-color: var(--primary-red-09);
+}
+.miniminiPred-viewResolutionBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: calc(100% - 1px);
+    min-width: calc(100% - 1px);
+    max-width: calc(100% - 1px);
+
+    height: 29px;
+    min-height: 29px;
+    max-height: 29px;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--primary-bg-01);
+
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+    border: solid 1px var(--primary-bg-08);
+    background-color: var(--secondary-bg-03);
+}
+.miniminiPred-viewResolutionBtn:hover {
+    color: var(--primary-bg-10);
+    background-color: var(--primary-bg-01);
+}
+.miniminiPred-categoricalOutcomesContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: calc(100% - 15px - 10px);
+    min-height: calc(100% - 15px - 10px);
+    max-height: calc(100% - 15px - 10px);
+
+    overflow: hidden;
+}
+.miniminiPred-categoricalOutcomesContainerInnerBody {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: calc(100% - 29px - 3px);
+    min-height: calc(100% - 29px - 3px);
+    max-height: calc(100% - 29px - 3px);
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.miniminiPred-categoricalOutcomesContainerInnerBody::-webkit-scrollbar {
+    display: none;
+
+    width: 0;
+    background: transparent; 
+}
+.miniminiPred-categoricalOutcomesHeaderContainer {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--primary-bg-05);
+
+    border-bottom: solid 1px var(--primary-bg-08);
+}
+.miniminiPred-categoricalOutcomesBodyContainer {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 10px;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--primary-bg-05);
+}
+.miniminiPred-categoricalOutcomeContOutcome {
+    display: flex;
+    align-items: center;
+
+    width: calc(100% - 100px);
+    min-width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+}
+.miniminiPred-categoricalOutcomeContDesc {
+    display: block;
+
+    width: calc(100% - 10px);
+    min-width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.miniminiPred-categoricalOutcomeContTrade {
+    display: flex;
+    align-items: center;
+
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+.miniminiPred-categoricalOutcomeBodyImgDescContainer {
+    display: flex;
+    align-items: flex-end;
+
+    width: calc(100% - 100px);
+    min-width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+}
+.miniminiPred-categoricalOutcomeBodyImg {
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+
+    object-fit: cover;
+    border-radius: 3px;
+}
+.miniminiPred-categoricalOutcomeBodyDesc {
+    display: block;
+
+    margin-left: 5px;
+
+    width: calc(100% - 30px - 10px);
+    min-width: calc(100% - 30px - 10px);
+    max-width: calc(100% - 30px - 10px);
+
+    font-size: 0.8rem;
+    color: var(--primary-bg-01);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.miniminiPredCategoricalOutcomeBodyTradeBtnsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
